@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const textoIngreso = document.querySelector('.texto__ingreso');
 const resultadoElemento = document.querySelector('.encriptado__resultado');
 const textoDerecha = document.querySelector('.encriptado__texto');
@@ -42,4 +43,6 @@ function desencriptar() {
 function copiar() {
     let resultado = resultadoElemento.value;
     navigator.clipboard.writeText(resultado);
+=======
+>>>>>>> 9dfcc254bfbbfc0c8bb9c38f10b0a0ce07425608
 }
