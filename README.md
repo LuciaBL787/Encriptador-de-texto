@@ -7,7 +7,6 @@ un texto introducido por el usuario en una versión encriptada siguiendo reglas 
 - El texto ingresado se transforma según reglas predefinidas.
 - El texto encriptado puede desencriptarse volviendo a su forma original.
 - Permite ingresar texto y ver el resultado en tiempo real.
-- Manipulación de elementos HTML mediante document.querySelector en JavaScript.
 
 <h3>Reglas de Encriptación</h3>
 
