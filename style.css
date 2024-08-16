@@ -120,6 +120,7 @@ header {
 }
 
 .encriptado__resultado {
+    margin: 4%;
     border: none;
     font-size: 1.5rem;
     background-color: var(--color-fondo-resultado);
@@ -128,7 +129,6 @@ header {
     color: var(--color-letra-chica);
     text-transform: lowercase;
     width: 98%;
-    height: 50%;
 }
 
 .encriptado__texto {
