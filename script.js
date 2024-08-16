@@ -12,7 +12,6 @@ function estilo() {
     resultadoElemento.style.display = "initial";
     textoDerecha.style.display = "none";
     botonCopiar.style.display = "initial";
-    textoIngreso.value = "";
 }
 
 function encriptar() {    
@@ -42,4 +41,5 @@ function desencriptar() {
 function copiar() {
     let resultado = resultadoElemento.value;
     navigator.clipboard.writeText(resultado);
+    textoIngreso.value = "";
 }
