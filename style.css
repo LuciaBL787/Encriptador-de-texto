@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-fondo: #F3F5FC;
+    --color-principal: #254336;
+    --color-letra-chica: #495057;
+    --color-fondo-resultado: #FFFFFF;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 5%;
+    padding: 1%;
+}
+
+.encriptador {
+    margin: 0 2% 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    gap: 16px;
+    width: 75%;
+}
+
+.texto__ingreso {
+    color: var(--color-principal);
+    font-size: 2rem;
+    padding-top: 4%;
+    border: none;
+    background-color: var(--color-fondo);
+    resize: none;
+    outline: none;
+    color: var(--color-principal);
+    font-family: "Quicksand", sans-serif;
+    text-transform: lowercase;
+}
+
+.texto__ingreso::placeholder {
+    color: var(--color-principal);
+    text-transform: none;
+}
+
+.texto__info {
+    font-size: 0.75rem;
+    color: var(--color-letra-chica);
+    display: flex;
+    gap: 3px;
+}
+
+.texto__botones {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 3.5%;
+}
+
+.texto__boton1 {
+    color: var(--color-fondo-resultado);
+    background-color: var(--color-principal);
+    border-radius: 24px;
+    border: var(--color-principal) solid 1px;
+    padding: 24px;
+    width: 45%;
+}
+
+.texto__boton1:hover {
+    background-color: #6b8a7a;
+    cursor: pointer;
+}
+
+.texto__boton2 {
+    color: var(--color-principal);
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    border: var(--color-principal) solid 1px;
+    padding: 24px;
+    width: 45%;
+}
+
+.texto__boton2:hover {
+    background-color: #ebeff4;
+    cursor: pointer;
+}
+
+.encriptado {
+    background-color: var(--color-fondo-resultado);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/assets/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 50%;
+    width: 30%;
+    padding: 2%;
+}
+
+.encriptado__resultado {
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--color-fondo-resultado);
+    resize: none;
+    outline: none;
+    color: var(--color-letra-chica);
+    text-transform: lowercase;
+    width: 98%;
+    height: 50%;
+}
+
+.encriptado__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70%;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}
+
+.encriptado__nohay {
+    font-weight: 700;
+    color: #343A40;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+
+.encriptado__info {
+    color: var(--color-letra-chica);
+    font-size: 1rem;
+}
+
+.boton__copiar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.encriptado__boton {
+    color: var(--color-principal);
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    border: var(--color-principal) solid 1px;
+    padding: 24px;
+    width: 75%;
+}
+
+.encriptado__boton:hover {
+    background-color: #ebeff4;
+    cursor: pointer;
+}
+
+footer {
+    color: var(--color-fondo-resultado);
+    background-color: var(--color-principal);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5%;
+}
+
+@media (max-width:1770px) {
+    .texto {
+        width: 60%;
+    }
+    
+    .encriptado {
+        background-position-y: 25%;
+        background-position-x: 50%;
+        width: 40%;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .logo {
+        width: 8%;
+        padding: 4% 0 0 3%;
+    }
+
+    .encriptador {
+        align-items: center;
+        flex-direction: column;
+        gap: 64px;
+        margin: 0 0 10% 0;
+    }
+    
+    .texto {
+        width: 90%;
+        padding: 0;
+    }
+
+    .texto__info {
+        padding-left: 3%;
+    }
+
+    .texto__botones {
+        justify-content: center;
+    }
+
+    .encriptado {
+        background-image: none;
+        width: 80%;
+        padding: 2%;
+    }
+
+    .encriptado__texto {
+        gap: 16px;
+    }
+}
+@media (max-width:600px) {
+    .logo {
+        width: 14%;
+    }
+
+    .encriptador {
+        margin-bottom: 18%;
+    }
+} 
