@@ -111,7 +111,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/assets/Muñeco.png);
+    background-image: url(./assets/Muñeco.png);
     background-repeat: no-repeat;
     background-position-y: 30%;
     background-position-x: 50%;
